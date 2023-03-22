@@ -2,6 +2,12 @@
     font-family: Muli;
     src:url("./fonts/Muli-Regular.ttf") format('truetype');
 }
+
+@font-face {
+    font-family: Muli-Bold;
+    src:url("./fonts/Muli-Bold.ttf") format('truetype');
+}
+
 * {
     font-family: Muli;
     margin: 0;
@@ -9,6 +15,7 @@
 }
 
 .wrapper {
+    flex-direction: column;
     display: flex;
     width: 100vw;
 }
@@ -18,7 +25,7 @@
     justify-content: space-between;
     background: rgb(255, 255, 255);
     width: 100%;
-    height: 60px;
+    height: 56px;
 }
 .header-left {
     align-items: center;
@@ -96,5 +103,107 @@
 }
 
 .form-container {
-    
+    display: flex;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("img/form-container-background.webp");
+    width: 100%;
+    height: 723px;
+}
+
+.left-form-container {
+    color: white;
+    display: flex;
+    justify-content:right;
+    margin-top: 50px;
+    width: 50%;
+}
+
+.form-container-text {
+    flex-direction: column;
+    display: flex;
+    width: 540px;
+    height:675px;
+}
+
+.dog-text {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.form-container-text span {
+    font-size: 30px;
+    margin-bottom: 15px;
+
+}
+
+.form-container-text h2 {
+    margin-bottom: 15px;
+    font-size: 60px;
+    font-family: Muli-Bold;
+}
+
+.right-form-container {
+    margin-left:30px;
+    display: flex;
+    margin-top: 50px;
+    width: 50%;
+}
+
+.module-container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background: white;
+    width: 536px;
+    height: 675px;
+    border-radius: 5px;
+    box-shadow: rgba(71, 71, 71, 0.47) 0px 2px 11px 0px;
+
+}
+
+.header-module {
+    font-size:19px;
+    color: rgb(114, 114, 114);
+    font-family: Muli-Bold;
+
+}
+
+.first-module {
+    display: flex;
+    padding: 10px;
+    border-width: 1px;
+    margin-top: 10px;
+    width: 330px;
+    height: 50px;
+    border-radius: 7px;
+    font-size:19px;
+}
+
+.module-rule {
+    margin-top:14px;
+    color: rgb(114, 114, 114);
+}
+
+.module-policy {
+    margin-top:14px;
+    color: rgb(114, 114, 114);
+}
+
+.button-start {
+    margin-top: 30px;
+}
+.btn-start {
+    background: #d1d1d1;
+    color: rgb(114, 114, 114);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 130px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 7px;
+    border-width: 0px;
+    font-family: Muli-Bold;
 }
