@@ -17,10 +17,14 @@
 .wrapper {
     flex-direction: column;
     display: flex;
-    width: 100vw;
+    width: calc(100vw - 20px);
 }
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     background: rgb(255, 255, 255);
@@ -103,6 +107,7 @@
 }
 
 .form-container {
+    margin-top: 56px;
     display: flex;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -206,4 +211,140 @@
     border-radius: 7px;
     border-width: 0px;
     font-family: Muli-Bold;
+}
+
+.explanation-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 24px 40px;
+    width: 100%;
+    min-height: 551px;
+}
+
+.h-explanation {
+    color: rgb(114, 114, 114);
+    font-family: Muli-Bold;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+.second-container {
+    width: 1050px;
+    justify-content:space-between;
+    margin-top: 10px;
+    display: flex;
+}
+
+.explanation {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 346px;
+    height: 308px;
+}
+
+.explanation img {
+    width:130px;
+    height:130px;
+}
+
+.t-explanation {
+    margin-top: 24px;
+    color: rgb(114, 114, 114);
+    font-family: Muli-Bold;
+    font-size: 18px;
+}
+
+.explanation-text {
+    display: flex;
+    text-align: center;
+    color: rgb(114, 114, 114);
+    margin-top:16px;
+    font-size: 18px;
+}
+
+.work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ededed;
+    width: 100%;
+    height: 495px;
+}
+
+.work-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1090px;
+    height: 336px;
+}
+
+.left-work-container {
+    width: 516px;
+    height: 336px;
+}
+
+.work-text {
+    width:516px;
+    height:336px;
+}
+
+.work-header {
+    font-size: 48px;
+    font-weight: bold;
+    color: rgb(114, 114, 114);
+}
+
+.work-mid-text {
+    color: rgb(114, 114, 114);
+    font-size:18px;
+    margin-top: 14px;
+    margin-bottom:14px;
+}
+
+.bottom-work-text {
+    font-size:18px;
+    font-weight: bold;
+}
+
+.work-img {
+    width: 530px;
+}
+
+.work-img img {
+    width: 540px;
+    height: 336px;
+}
+
+.footer {
+    margin-top:50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 408px;
+
+}
+
+.footer-container {
+    width: 1072px;
+    height: 60px;
+
+}
+
+.footer-header {
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: rgb(114, 114, 114);
+    width: 1072px;
+    height: 60px;
+
 }
