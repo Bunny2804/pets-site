@@ -18,6 +18,7 @@
     flex-direction: column;
     display: flex;
     width: calc(100vw - 20px);
+    position: relative;
 }
 
 .header {
@@ -30,6 +31,7 @@
     background: rgb(255, 255, 255);
     width: 100%;
     height: 56px;
+    z-index: 5000;
 }
 .header-left {
     align-items: center;
@@ -323,28 +325,231 @@
     height: 336px;
 }
 
-.footer {
+.video-content {
     margin-top:50px;
     display: flex;
-    justify-content: center;
     width: 100%;
     height: 408px;
-
+    flex-direction: column;
+    align-items: center;
 }
 
-.footer-container {
-    width: 1072px;
-    height: 60px;
-
-}
-
-.footer-header {
+.video-container-header {
     display: flex;
     justify-content: center;
-    font-size: 48px;
+    font-size: 54px;
     font-weight: bold;
     color: rgb(114, 114, 114);
     width: 1072px;
     height: 60px;
+    margin-bottom: 70px;
+}
 
+.video-container-content {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 17px 0px;
+    padding: 24px;
+    width: 427px;
+    height: 197px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.video-content-left {
+    width: 209px;
+    height: 131px;
+}
+
+.video-content-text {
+    font-size:18px;
+    color: rgb(114, 114, 114);
+}
+
+.video-content-icon {
+    width: 168px;
+}
+
+.video-content-icon img {
+    width: 168px;
+    height: 149px;
+}
+
+.play-button {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    bottom: -28px;
+}
+
+.video-signature {
+    width: 427px;
+    height: 50px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    color: rgb(114, 114, 114);
+    font-size: 18px;
+    margin-left: 14px;
+}
+
+.left-signature {
+    font-weight: bold;
+}
+
+.video-all {
+    width: 870px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pet-caregivers {
+    margin-top: 50px;
+    background-color: rgb(58, 80, 128);
+    width: 100%;
+    height: 653px;
+    display: flex;
+    justify-content: center;
+}
+.pet-caregivers-container {
+    width: 1120px;
+    height: 653px;
+}
+
+.pet-caregivers-header {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: bold;
+    width: 100%;
+    height: 60px;
+    margin-top: 40px;
+}
+
+.pet-caregivers-container-content {
+    margin-top: 50px;
+    width: 1072px;
+    height: 334px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pet-caregivers-content {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 108px;
+}
+
+.pet-caregivers-left {
+    font-style: oblique;
+    color: rgb(251, 236, 185);
+}
+
+.pet-caregivers-first {
+    font-size: 56px;
+}
+
+.pet-caregivers-second {
+    font-size: 18px;
+    display: flex;
+    justify-content: end;
+}
+
+.pet-caregivers-right {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+}
+.pet-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pet-caregivers-button-container {
+    margin-top: 10px;
+    width: 1072px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pet-caregivers-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pet-button {
+    background-color: rgb(251, 236, 185);
+    color: rgb(133, 98, 62);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 130px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 7px;
+    border-width: 0px;
+    font-family: Muli-Bold;
+}
+
+.pet-button:hover {
+    opacity: 0.8;
+}
+
+.pet-button-text {
+    margin-top: 14px;
+    font-size: 18px;
+    color: white;
+}
+
+.footer {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 112px;
+}
+
+.footer-container {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 1120px;
+    height: 41px;
+}
+
+.footer-left {
+    color: rgb(153, 153, 153);
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-name {
+    font-size: 14px;
+    height: 41px;
+    width: 160px;
+}
+.footer-url {
+    color: rgb(153, 153, 153);
+    text-decoration: none;
+}
+
+.footer-right {
+    width: 150px;
+    height: 41px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-line {
+    margin-top: 40px;
+    background-color: rgb(209, 209, 209);
+    border: none;
+    height: 1px;
 }
